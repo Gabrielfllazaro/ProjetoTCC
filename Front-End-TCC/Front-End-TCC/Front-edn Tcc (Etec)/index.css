@@ -1,0 +1,129 @@
+/* Cor de fundo */
+body{
+     background-color:  #1a2e3d;
+}
+
+/* Container com todas as outras div's */
+.principalContainer{
+    display: flex;
+}
+.siteName{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Div de título ajustada */
+.titulo {
+    width: 50%;          /* Ocupa metade do container pai */
+    max-width: 50vw;     /* Garante que não passe da metade da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo h1 {
+    width: 100%;         /* O h1 ocupa o total da div pai (.titulo) */
+    color: #C9BAB0;
+    font-size: clamp(30px, 5vw, 65px); /* Fonte responsiva: diminui em telas menores */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 130px;
+    margin-left: 30px;
+    line-height: 1.1;    /* Melhora o espaçamento se o texto quebrar linha */
+}
+
+/* Div com o paragrafo abaixo do SPECTRUM TI */
+.titulo, p{
+    margin-left: 25px;
+    font-size: medium;
+    margin-top: -5px;
+    color: #C9BAB0;
+}
+
+
+/* botão */
+.button-74 {
+  margin-left: 20px;
+  background-color: #C9BAB0;
+  border: 2px solid #422800;
+  border-radius: 0px;
+  box-shadow: black 4px 4px 0 0;
+  color:#12363F;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+/* Imagem principal */
+.img1, img{
+    display: block;
+    border-radius: 5%;
+    height: 37  0px;
+    width: 370px;
+    margin-left: 70px;
+    margin-top: 4%;
+}
+
+/* Links da Navbar */   
+
+.navbar {
+    width: 100%;
+    display: flex;
+    gap: 40px;      
+    justify-content: end ;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    
+}
+
+header, siteName{
+    margin-top: 5px;
+    padding-right: 0px;
+    border-bottom: 3px solid white;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, navbar, a:link{
+    color: #C9BAB0;
+    list-style: none;
+}
+
+header, navbar, a:hover{
+    color: #C9BAB0;
+}
+header, navbar, a:visited{
+    color: #C9BAB0;
+}
+header, navbar, a:active{
+    color: #C9BAB0;
+}
+
+
+
